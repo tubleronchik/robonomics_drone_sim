@@ -1,7 +1,8 @@
 # Drone control with robonomics 
 ## Description
 Drone starts moving after transcation and store file with the coordinates in IPFS.  
-**The control script is based on the [GAAS demo script](https://github.com/generalized-intelligence/GAAS)**
+**The control script is based on the [GAAS demo script](https://github.com/generalized-intelligence/GAAS)**  
+Video example is available on [YouTube](https://youtu.be/4CwtGAX1OwM)
 
 ## Requirements
 * dependencies for control:
