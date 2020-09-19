@@ -114,7 +114,7 @@ After data was pushed to IPFS, go to the **Chain State** in [Robonomics Portal](
 
 ![datalog](https://github.com/tubleronchik/robonomics_drone_sim/blob/master/media/datalog.jpg)
 
-You can find drone's telemetry running `https://gateway.ipfs.io/ipfs/hash` inserting the hash from above.
+You can find drone's telemetry running `https://gateway.ipfs.io/ipfs/<hash>` inserting the hash from above.
 
 ![output](https://github.com/tubleronchik/robonomics_drone_sim/blob/master/media/output.jpg)
 
