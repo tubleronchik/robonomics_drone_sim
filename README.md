@@ -5,7 +5,7 @@ Drone starts moving after transcation and store file with the coordinates in IPF
 
 ## Requirements
 * dependencies for control:
-``` bash
+``` sh
 sudo apt install -y \
 	ninja-build \
 	exiftool \
@@ -21,7 +21,7 @@ sudo apt install -y \
 	libeigen3-dev \
 	genromfs
 ```
-```bash 
+```sh 
 pip3 install \
 	pandas \
 	jinja2 \
@@ -46,7 +46,7 @@ sudo bash install.sh
 ipfs init
 ```
 * ipfshttpclient
-```bash
+```sh
 pip3 install ipfshttpclient
 ```
 * Robonomics node (binary file) (download latest release [here](https://github.com/airalab/robonomics/releases))
