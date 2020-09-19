@@ -109,5 +109,11 @@ To send a transaction run in another window:
 
 After data was pushed to IPFS, go to the **Chain State** in [Robonomics Portal](https://parachain.robonomics.network). Select **datalog** in query and add DRONE datalog using `+` button.
 
+![datalog](https://github.com/tubleronchik/robonomics_drone_sim/blob/master/media/datalog.jpg)
+
 You can find drone's telemetry running `https://gateway.ipfs.io/ipfs/hash` inserting the hash from above.
+
+![output](https://github.com/tubleronchik/robonomics_drone_sim/blob/master/media/output.jpg)
+
+It's important to remove `db` derictory before next launches using ` rm -rf ~/.local/share/robonomics/chains/dev/db`
 
