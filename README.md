@@ -78,7 +78,9 @@ catkin build
 ```
 ## Robonomics Network
 To create a local robonomics network go to the folder with the robonomic binary file and run:  
-`./robonomics --dev --rpc-cors all`
+`./robonomics --dev --rpc-cors all`  
+
+Add robonomic's path to `config.py`
 
 ![IPFS](https://github.com/tubleronchik/robonomics_drone_sim/blob/master/media/IPFS.jpg)
 
