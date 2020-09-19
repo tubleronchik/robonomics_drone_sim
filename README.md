@@ -76,10 +76,17 @@ cd ..
 catkin build
 ```
 ## Robonomics Network
-To create a local robonomics network go to the folder with the robonomic binary file and run:
+To create a local robonomics network go to the folder with the robonomic binary file and run:  
 `./robonomics --dev --rpc-cors all`
+
+![IPFS](https://github.com/tubleronchik/robonomics_drone_sim/blob/master/media/IPFS.jpg)
+
 Go to the [Robonomics Portal](https://parachain.robonomics.network) and switch to local node.
+![localNode](https://github.com/tubleronchik/robonomics_drone_sim/blob/master/media/localNode.jpg)
+
 Go to **Accounts** and create **DRONE** and **EMPLOYER** accounts. Save the account names and keys and path to **robonomics** to `~/catkin_ws/src/drone_sim/src/config.py`. Transfer some money into the accounts.
+
+![accounts](https://github.com/tubleronchik/robonomics_drone_sim/blob/master/media/addingAcc.jpg)
 
 ## Running Simulation
 Run IPFS daemon
@@ -94,6 +101,9 @@ cd ~/catkin_ws/src/drone_sim/src
 python3 takeoff.py
 ```
 Waiting till "Waiting for payment" 
+
+![launch](https://github.com/tubleronchik/robonomics_drone_sim/blob/master/media/launch.jpg)
+
 To send a transaction run in another window:
 `echo "ON" | ./robonomics io write launch -r <drone_addres> -s <employer_key>` - where **<drone_address>** and **<employer_key>** should be replaced with the strings from `config.py` accordingly.
 
