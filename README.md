@@ -61,14 +61,24 @@ git clone https://github.com/PX4/Firmware.git
 cd Firmware
 make posix_sitl_default gazebo
 ```
+```bash
+cd ~/catkin_ws/src
+git clone https://github.com/generalized-intelligence/GAAS.git
+cp -r ~/catkin_ws/src/simulator/models/* ~/catkin_ws/src/Firmware/Tools/sitl_gazebo/models/
+cp -r ~/catkin_ws/src/GAAS/simulator/worlds/* ~/catkin_ws/src/Firmware/Tools/sitl_gazebo/worlds/
+cp -r ~/catkin_ws/src/GAAS/simulator/posix-config/* ~/catkin_ws/src/Firmware/posix-configs/SITL/init/ekf2/
+```
+
 Modifying your `.bashrc` file, adding the following lines to the bottom:  
 
 `source ~/catkin_ws/devel/setup.bash `  
-`source ~/catkin_ws/src/Firmware/Tools/setup_gazebo.bash ~/catkin_ws/src/Firmware/ ~/catkin_ws/src/Firmware/build posix_sitl_default `    
+`source ~/catkin_ws/src/Firmware/Tools/setup_gazebo.bash ~/catkin_ws/src/Firmware/ ~/catkin_ws/src/Firmware/build posix_sitl_default `   
+`export GAZEBO_MODEL_PATH=:~/catkin_ws/src/simulator/models`  
 `export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/catkin_ws/src/Firmware`  
 `export ROS_PACKAGE_PATH=$ROS_PACKAGE_PATH:~/catkin_ws/src/Firmware/Tools/sitl_gazebo`  
-  
+`export GAZEBO_MODEL_PATH=:~/catkin_ws/src/simulator/models:~/catkin_ws/src/GAAS/simulator/models`  
 
+  
 ## Control Package Installation
 ```bash
 cd catkin_ws/src
