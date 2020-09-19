@@ -115,5 +115,6 @@ You can find drone's telemetry running `https://gateway.ipfs.io/ipfs/hash` inser
 
 ![output](https://github.com/tubleronchik/robonomics_drone_sim/blob/master/media/output.jpg)
 
-It's important to remove `db` derictory before next launches using ` rm -rf ~/.local/share/robonomics/chains/dev/db`
+It's important to remove `db` derictory before next launches using  
+` rm -rf ~/.local/share/robonomics/chains/dev/db`
 
