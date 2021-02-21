@@ -55,10 +55,12 @@ pip3 install ipfshttpclient
 ```bash 
 sudo apt-get install ros-melodic-mavros ros-melodic-mavros-extras
 wget https://raw.githubusercontent.com/mavlink/mavros/master/mavros/scripts/install_geographiclib_datasets.sh
+chmod +x ./install_geographiclib_datasets.sh  
 sudo ./install_geographiclib_datasets.sh
 cd ~/catkin_ws/src
 git clone https://github.com/PX4/Firmware.git
 cd Firmware
+git checkout v1.8.0
 make posix_sitl_default gazebo
 ```
 ```bash
