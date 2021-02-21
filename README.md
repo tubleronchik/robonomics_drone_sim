@@ -37,6 +37,7 @@ pip3 install \
 * extra packages: 
 ``` bash 
 sudo apt-get install ros-melodic-gazebo-ros-control ros-melodic-effort-controllers ros-melodic-joint-state-controller
+sudo apt-get install python-jinja2
 ```
 * IPFS verson 0.4.22
 ```bash
