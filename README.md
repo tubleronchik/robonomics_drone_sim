@@ -67,7 +67,7 @@ make posix_sitl_default gazebo
 ```bash
 cd ~/catkin_ws/src
 git clone https://github.com/generalized-intelligence/GAAS.git
-cp -r ~/catkin_ws/src/simulator/models/* ~/catkin_ws/src/Firmware/Tools/sitl_gazebo/models/
+cp -r ~/catkin_ws/src/GAAS/simulator/models/* ~/catkin_ws/src/Firmware/Tools/sitl_gazebo/models/
 cp -r ~/catkin_ws/src/GAAS/simulator/worlds/* ~/catkin_ws/src/Firmware/Tools/sitl_gazebo/worlds/
 cp -r ~/catkin_ws/src/GAAS/simulator/posix-config/* ~/catkin_ws/src/Firmware/posix-configs/SITL/init/ekf2/
 ```
