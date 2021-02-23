@@ -87,7 +87,7 @@ Modifying your `.bashrc` file, adding the following lines to the bottom:
 
   
 ## Control Package Installation
-In the new Terminal:
+In a new Terminal:
 ```bash
 cd catkin_ws/src
 git clone https://github.com/tubleronchik/robonomics_drone_sim.git
