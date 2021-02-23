@@ -65,7 +65,7 @@ sudo ./install_geographiclib_datasets.sh
 cd ~/catkin_ws/src
 git clone https://github.com/PX4/Firmware.git
 cd Firmware
-git checkout v1.8.0
+git checkout v1.9.0
 bash ./Tools/setup/ubuntu.sh
 ```
 ```bash
