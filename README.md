@@ -8,6 +8,7 @@ Video example is available on [YouTube](https://youtu.be/4CwtGAX1OwM)
 * dependencies for control:
 ``` sh
 sudo apt install -y \
+	python3-pip \
 	ninja-build \
 	exiftool \
 	python-argparse \
@@ -38,6 +39,9 @@ pip3 install \
 ``` bash 
 sudo apt-get install ros-melodic-gazebo-ros-control ros-melodic-effort-controllers ros-melodic-joint-state-controller
 sudo apt-get install python-jinja2
+sudo apt-get install python-catkin-pkg
+sudo apt-get install python3-catkin-pkg-modules
+
 ```
 * IPFS verson 0.4.22
 ```bash
@@ -62,7 +66,7 @@ cd ~/catkin_ws/src
 git clone https://github.com/PX4/Firmware.git
 cd Firmware
 git checkout v1.8.0
-make posix_sitl_default gazebo
+bash ./Tools/setup/ubuntu.sh
 ```
 ```bash
 cd ~/catkin_ws/src
@@ -83,11 +87,12 @@ Modifying your `.bashrc` file, adding the following lines to the bottom:
 
   
 ## Control Package Installation
+In the new Terminal:
 ```bash
 cd catkin_ws/src
-https://github.com/tubleronchik/robonomics_drone_sim.git
+git clone https://github.com/tubleronchik/robonomics_drone_sim.git
 cd ..
-catkin build
+catkin_make
 ```
 ## Robonomics Network
 To create a local robonomics network go to the folder with the robonomic binary file and run:  
@@ -100,7 +105,7 @@ Add robonomic's path to `config.py`
 Go to the [Robonomics Portal](https://parachain.robonomics.network) and switch to local node.
 ![localNode](https://github.com/tubleronchik/robonomics_drone_sim/blob/master/media/localNode.jpg)
 
-Go to **Accounts** and create **DRONE** and **EMPLOYER** accounts. Save the account names and keys and path to **robonomics** to `~/catkin_ws/src/drone_sim/src/config.py`. Transfer some money into the accounts.
+Go to **Accounts** and create **DRONE** and **EMPLOYER** accounts. Save the account names and keys and path to **robonomics** to `~/catkin_ws/src/robonomics_drone_sim/src/config.py`. Transfer some money into the accounts.
 
 ![accounts](https://github.com/tubleronchik/robonomics_drone_sim/blob/master/media/addingAcc.jpg)
 
